@@ -1,9 +1,8 @@
 public class hollowrectangle {
-    public static void main(String args[]){
-        int n=5;
-        for(int i=0;i<=n;i++){
-            for(int j=0;j<=n;j++){
-                if(i==0||j==0||i==5||j==5){
+    public static void printrectangle(int rows,int colms){
+        for(int i=1;i<=rows;i++){
+            for(int j=1;j<=colms;j++){
+                if(i==1||i==rows||j==1||j==colms){
                     System.out.print("*");
                 }
                 else{
@@ -12,6 +11,10 @@ public class hollowrectangle {
             }
             System.out.println();
         }
+    }
+    public static void main(String args[]){
+        printrectangle(5,7);
+        
     }
     
     

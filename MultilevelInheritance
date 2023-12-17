@@ -1,0 +1,41 @@
+public class MultilevelInheritance {
+    public static void main(String args[]){
+        human h = new human();
+        h.giveBirth();
+        h.laugh();
+        h.walk();
+        h.sleep();
+        Mammals m = new Mammals();
+        m.giveBirth();
+
+
+    }
+    
+}
+class Animal{
+    void sleep(){
+        System.out.println("it sleeps");
+    }
+    void walk(){
+        System.out.println("it walks");
+    }
+}
+class Mammals extends Animal{
+    void eats(){
+        System.out.println("i eats");
+    }
+    void giveBirth(){
+        System.out.println("it give birth to young ones");
+    }
+}
+class human extends Mammals{
+    void laugh(){
+        System.out.println("they laughs");
+    }
+    void talk(){
+        System.out.println("they talk");
+    }
+    void giveBirth(){
+        System.out.println("humans give birth to young ones");
+    }
+}

@@ -1,0 +1,23 @@
+public class methodoverloading {
+    public static void main(String args[]){
+       abc de = new abc();
+       System.out.println(de.sub(7,4));
+       System.out.println(de.sub((float)7.4,(float)4.6));
+       System.out.println(de.sub(7,4,9));
+
+
+    }
+    
+}
+class abc{
+    int sub(int a, int b){
+        return a-b;
+    }
+    float sub(float x, float y){
+        return x-y;
+
+    }
+    int sub(int a,int b,int c){
+        return a-b-c;
+    }
+}
